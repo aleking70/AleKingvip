@@ -13,9 +13,24 @@ local UI = Library()
 
 local Window = UI:AddWindow("AleKing | PRIVATE KILLER", {
     main_color = Color3.fromRGB(0, 0, 0),
-    min_size = Vector2.new(680, 870),
+    min_size = Vector2.new(500, 700),
     can_resize = true
 })
+
+-- Add Logo
+local logo = Window:AddLabel("")
+logo.Text = ""
+pcall(function()
+    -- Logo styling
+    local parent = logo.Parent
+    if parent then
+        local imageLabel = Instance.new("ImageLabel")
+        imageLabel.Image = "rbxassetid://85099497918857"
+        imageLabel.Size = UDim2.new(0, 40, 0, 40)
+        imageLabel.BackgroundTransparency = 1
+        imageLabel.Parent = parent
+    end
+end)
 
 local KillTab = Window:AddTab("Kill")
 local TeleportTab = Window:AddTab("Teleport")
