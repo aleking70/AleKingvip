@@ -16,7 +16,7 @@ if not displayName or displayName == "" then
 end
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
-local title = ("<b>OVERLORD</b> | <i>Private Killer</i> Hello <b>%s</b>"):format(displayName)
+local title = ("OVERLORD  |  Private Killer  Hello %s"):format(displayName)
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/aleking70/AleKingvip/refs/heads/main/Librarykll.lua", true))()
 
@@ -25,10 +25,6 @@ local window = library:AddWindow(title, {
     min_size = Vector2.new(500, 870),
     can_resize = true,
 })
-
-if window and window.Title then
-    window.Title.RichText = true
-end
 
 ---------------------------------------
 ---
