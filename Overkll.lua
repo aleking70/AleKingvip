@@ -16,13 +16,13 @@ if not displayName or displayName == "" then
 end
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
-local title = ("Genesis Hub| Hello %s"):format(displayName)
+local title = ("OVERLORD|PRIVATE KILLER Hello %s"):format(displayName)
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/aleking70/AleKingvip/refs/heads/main/Librarykll.lua", true))()
 
 local window = library:AddWindow(title, {
     main_color = Color3.fromRGB(0, 0, 0),
-    min_size = Vector2.new(400, 870),
+    min_size = Vector2.new(500, 870),
     can_resize = true,
 })
 
