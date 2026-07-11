@@ -28,7 +28,7 @@ local window = library:AddWindow(title, {
 
 ---------------------------------------
 ---
-local Killer = window:AddTab("Kill")
+local Killer = window:AddTab("  Kill  ")
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -1363,7 +1363,7 @@ refreshActive()
 
 
 
-local MusicTab = window:AddTab("Music")
+local MusicTab = window:AddTab("  Music  ")
 
 local MP3_URL = ""
 local Playlist = {}
@@ -1536,7 +1536,7 @@ MusicTab:AddButton("Clear Playlist", function()
 	savePlaylist()
 	currentIndex = 0
 end)
-local teleport = window:AddTab("Teleport")
+local teleport = window:AddTab("  Teleport  ")
 
 teleport:AddButton("Spawn", function()
     local player = game.Players.LocalPlayer
@@ -1694,7 +1694,7 @@ teleport:AddButton("Brawl Regular", function()
     })
 end)
 
-local Credits = window:AddTab("Credits")
+local Credits = window:AddTab("  Credits  ")
 
 Credits:AddLabel("paid version")
 Credits:AddLabel("Script Made by username:")
