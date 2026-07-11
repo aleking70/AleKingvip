@@ -16,7 +16,7 @@ if not displayName or displayName == "" then
 end
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
-local title = ("<b><font color='rgb(255, 0, 0)'>OVERLORD</font></b> | <font color='rgb(0, 255, 0)'>Private Killer Hello %s</font>"):format(displayName)
+local title = ("<b>OVERLORD</b> | <i>Private Killer</i> Hello <b>AleKing</b> %s"):format(displayName)
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/aleking70/AleKingvip/refs/heads/main/Librarykll.lua", true))()
 
